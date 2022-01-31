@@ -1,9 +1,9 @@
 <template>
   <div class="dischi text-center">
-    <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" >
-    <h4>nome</h4>
-    <div>artista</div>
-    <div>anno</div>
+    <img :src="info.image" >
+    <h3>{{info.title}}</h3>
+    <div>{{info.author}}</div>
+    <div>{{info.year}}</div>
     
     
   </div>
@@ -11,7 +11,15 @@
 
 <script>
 export default {
-    name: 'Dischi'
+    name: 'Dischi',
+    props:{
+      info: Object,
+      // poster: String,
+      // title: String,
+      // author: String,
+      // year: String,
+
+    }
 }
 </script>
 

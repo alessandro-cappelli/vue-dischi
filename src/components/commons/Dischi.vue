@@ -1,31 +1,23 @@
 <template>
-  <div class="dischi text-center">
-    <img :src="info.image" >
-    <h3>{{info.title}}</h3>
+<div class="dischi">
+    <img :src="info.poster" style="height: 236px">
+    <h2>{{info.title}}</h2>
     <div>{{info.author}}</div>
     <div>{{info.year}}</div>
-    
-    
-  </div>
+</div>
 </template>
 
 <script>
 export default {
     name: 'Dischi',
-    props:{
-      info: Object,
-      // poster: String,
-      // title: String,
-      // author: String,
-      // year: String,
-
+    props: {
+        info: Object
     }
 }
 </script>
 
 <style lang='scss' scoped>
 img{
-  width: 100%;
+    width: 100%;
 }
-
 </style>

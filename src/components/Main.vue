@@ -1,18 +1,11 @@
 <template>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <list-dischi/>
-                </div>
-            </div>
-        </div>
-    </main>
-  
+  <main>
+      <ListDischi />
+  </main>
 </template>
 
 <script>
-import ListDischi from "./Section/ListDischi.vue"
+import ListDischi from "./sections/ListDischi.vue"
 export default {
     name: 'Main',
     components: {
@@ -21,8 +14,6 @@ export default {
 }
 </script>
 
-<style>
-main{
-    background-color: #1E2D3B;
-}
+<style lang='scss' scoped>
+
 </style>
